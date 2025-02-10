@@ -37,7 +37,10 @@ fun buildHttpClient(engine: HttpClientEngine): HttpClient {
         defaultRequest {
             contentType(ContentType.Application.Json)
             header(HttpHeaders.ContentType, ContentType.Application.Json)
-            header("x-api-key", "")
+            header(
+                key = "x-api-key",
+                value = ""
+            )
         }
     }
 }
